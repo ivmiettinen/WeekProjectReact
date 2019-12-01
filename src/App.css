@@ -1,22 +1,90 @@
+body {
+  background-color: lightblue;
+  background-image: url('nature-milky-way-night-stars-102539.jpeg');
+}
+
+.AppTitle {
+  color: blue;
+}
+
 .App {
+  color: white;
+  padding: 0.1em 0.5em;
+}
+
+.AppTitle {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.AppComponent {
+  width: 95%;
+  margin: 1em auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.Quote {
+  color: rgb(4, 115, 100);
+  padding: 0.1em 0.5em;
+}
+
+.quoteid {
+  display: block;
+  float: right;
+}
+
+.quoteid::after {
+  clear: both;
+}
+
+.Quote {
+  background-color: lightskyblue;
+  padding: 10px;
+  border-radius: 10pt;
+  margin: 5px;
+}
+.Quote:nth-of-type(2n + 1) {
+  background-color: lightblue;
+}
+
+.Quote .quotetext {
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+.Quote .author {
+  font-weight: bold;
+  margin-left: 1em;
+}
+
+.QuoteForm form {
+  border: 1pt solid lightskyblue;
+  border-radius: 10pt;
+  padding: 1em;
+  width: 95%;
+}
+
+.QuoteForm label {
+  display: inline-block;
+  vertical-align: top;
+  width: 8em;
+}
+
+.QuoteForm input[type='submit'] {
+  background-color: blueviolet;
   color: white;
+  border-color: blueviolet;
+  padding: 0.4em 1em;
 }
 
-.App-link {
-  color: #09d3ac;
+.button1 {
+  background-color: lightpink;
+  color: white;
+  font-size: small;
+  border-color: lightpink;
+  padding: 0.4em 1em;
+  border-radius: 10;
+}
+
+.inputrow input,
+textarea {
+  width: 60%;
 }
